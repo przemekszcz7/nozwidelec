@@ -110,7 +110,7 @@ export default function App() {
               transition={{ duration: 1.5 }}
               src={IMAGES[2]} 
               alt="Hero image" 
-              className="w-full h-full object-cover grayscale brightness-50"
+              className="w-full h-full object-cover brightness-50"
             />
           </div>
           
@@ -238,7 +238,7 @@ export default function App() {
                   <img 
                     src={src} 
                     alt={`Galeria obraz ${i + 1}`}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000 ease-out" 
                   />
                   <div className="absolute inset-0 bg-accent-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </motion.div>
@@ -266,7 +266,7 @@ export default function App() {
           <span className="section-number text-white opacity-5">03</span>
           <div className="max-w-[1200px] mx-auto px-6 grid md:grid-cols-5 gap-16 md:gap-32">
             <div className="md:col-span-3 order-2 md:order-1">
-              <div className="h-[400px] md:h-[600px] w-full rounded-sm grayscale invert contrast-125 brightness-75 hover:grayscale-0 hover:invert-0 hover:brightness-100 transition-all duration-700 overflow-hidden border border-text-light/10">
+              <div className="h-[400px] md:h-[600px] w-full rounded-sm transition-all duration-700 overflow-hidden border border-text-light/10">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2327.8554988105248!2d22.302909177198412!3d54.30650580245026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e16fda528dceab%3A0x9dd02207876638de!2sWarsztatowa%202%2C%2019-500%20Go%C5%82dap!5e0!3m2!1spl!2spl!4v1778656976752!5m2!1spl!2spl" 
                   width="100%" 
@@ -366,7 +366,7 @@ export default function App() {
               animate={{ scale: 1, opacity: 1 }}
               src={selectedImg} 
               alt="Full view" 
-              className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-700"
+              className="max-h-full max-w-full object-contain transition-all duration-700"
               onClick={(e) => e.stopPropagation()}
             />
           </motion.div>
