@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "DM Sans", sans-serif;
+  
+  --color-bg-primary: #F5F0E8;
+  --color-bg-secondary: #EDEAE0;
+  --color-bg-dark: #1C1917;
+  --color-bg-card: #FFFFFF;
+  
+  --color-accent-primary: #C8963E;
+  --color-accent-dark: #8B6220;
+  --color-accent-muted: #E8D5B0;
+  
+  --color-text-primary: #1C1917;
+  --color-text-secondary: #6B6560;
+  --color-text-light: #F5F0E8;
+  --color-text-muted: #A09890;
+  
+  --color-border-warm: #E0D8CC;
+  --color-divider-bold: #1C1917;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-primary font-sans antialiased;
+  }
+}
+
+.section-label {
+  @apply font-sans text-[11px] uppercase tracking-[0.25em] text-accent-primary font-bold mb-4 block;
+}
+
+.section-number {
+  @apply absolute -top-10 -left-6 text-[120px] md:text-[180px] font-serif font-bold text-accent-muted/20 select-none -z-10 leading-none pointer-events-none;
+}
+
+.bold-divider {
+  @apply h-[2px] bg-divider-bold w-full my-0 opacity-100;
+}
